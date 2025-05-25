@@ -142,6 +142,11 @@ def start_quiz():
             'correct_answer': correct_answer,
             'correct': is_correct
         })
+    # Quiz Statistics
+    print("\n=== QUIZ STATISTICS ===")
+    print(f"Questions answered: {total_questions}")
+    print(f"Correct answers: {score}")
+    print(f"Incorrect answers: {total_questions - score}")
 
     # Ask if user wants to see full history
     see_history = input("Would you like to see your quiz history? (yes/no): ").strip().lower()
