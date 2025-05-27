@@ -108,7 +108,7 @@ def start_quiz():
             else:
                 print("Please enter a positive number.")
         except ValueError:
-            print("Invalid input. Please enter a number.")
+            print("Invalid! Please enter a integer.")
 
     # Initialize score and history list
     score = 0
@@ -125,7 +125,7 @@ def start_quiz():
                 user_answer = int(input("Your answer: "))
                 break
             except ValueError:
-                print("Invalid input. Please enter a number.")
+                print("Invalid! Please enter a number.")
 
         # Check if the answer is correct
         is_correct = user_answer == correct_answer
